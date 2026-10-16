@@ -1,0 +1,16 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /OpenAction 3 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kinds [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Action /S /JavaScript /JS (app.alert('Suspicious PDF Action Detected');) >>
+endobj
+4 0 obj
+<< /Type /Annot /Subtype /Link /A << /S /URI /URI (https://phishing-gateway.top/login) >> >>
+endobj
+trailer
+<< /Root 1 0 R >>
+%%EOF

